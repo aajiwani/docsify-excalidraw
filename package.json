@@ -1,0 +1,35 @@
+{
+  "name": "docsify-excalidraw",
+  "version": "0.0.1",
+  "main": "dist/docsify-excalidraw.js",
+  "source": "src/index.js",
+  "repository": "git@github.com:aajiwani/docsify-excalidraw.git",
+  "author": "Amir Ali Jiwani <amirali.jiwani89@gmail.com>",
+  "license": "MIT",
+  "description": "Based on kroki.io service -- Extracts a way to render ExcaliDraw images from the exported JSON",
+  "scripts": {
+    "build": "npx parcel build --no-source-maps",
+    "park-build-artifact": "cp -R dist ./example",
+    "ci_tests": "npx cypress run --headless -b chrome",
+    "local_tests": "npx cypress open",
+    "example": "npm run build && npm run park-build-artifact && docsify serve example"
+  },
+  "keywords": [
+    "docsify",
+    "kroki.io",
+    "diagram",
+    "excalidraw"
+  ],
+  "bugs": {
+    "url": "https://github.com/aajiwani/websequencediagrams-docsify/issues"
+  },
+  "dependencies": {
+    "@semantic-release/commit-analyzer": "^9.0.2",
+    "@semantic-release/npm": "^9.0.1",
+    "@semantic-release/release-notes-generator": "^10.0.3",
+    "cypress": "^10.6.0",
+    "docsify-cli": "^4.4.4",
+    "parcel": "^2.7.0",
+    "semantic-release": "^19.0.5"
+  }
+}

@@ -1,0 +1,12 @@
+.travis.yml
+yarn.lock
+yarn-error.log
+example/
+cypress/
+src/
+cypress.json
+.cache/
+docs/
+.parcel-cache/
+README.md
+LICENSE
